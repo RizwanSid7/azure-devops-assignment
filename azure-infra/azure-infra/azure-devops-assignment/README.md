@@ -29,31 +29,22 @@ Screenshots of each step in the deployment process are included in the `screensh
 
 ---
 
-## Challenges Faced
+**Challenges Faced**
 
-Challenges Faced
-App Service Editor Visibility Issue:
+**1. App Service Editor Visibility Issue:**
 I encountered an issue where the "App Service Editor" was not visible in the Azure portal. This made it difficult to directly edit files on the deployed app, as I had to find an alternative method to access and modify content.
 
-Uploading Files to wwwroot:
+**2. Uploading Files to wwwroot:**
 Uploading files directly to the wwwroot folder was complex due to limited access in the free-tier App Service plan. This required additional steps and tools to work around the limitations of the free-tier.
 
-DNS Propagation Delays:
+**3. DNS Propagation Delays:**
 After deploying the app, the DNS settings took some time to propagate. As a result, the website was not immediately accessible, causing delays in testing and validation.
 
-“Site Not Reachable” Issue:
+**4. “Site Not Reachable” Issue:**
 I encountered a "site not reachable" issue after deployment. This was resolved by ensuring proper deployment of the necessary files (like the index.html) and fixing a few configurations in the app.
 
-Avoiding FileZilla Due to Security Flags:
+**5. Avoiding FileZilla Due to Security Flags:**
 I initially considered using tools like FileZilla to upload files, but security flags on my system prevented the installation. I decided to proceed with Azure Portal's Kudu service and SSH into the App Service to manage and deploy files directly to the web app.
-
----
-
-## Deployment Output
-
-Static website URL:  
-*(Include your actual URL here, if available)*
-
 ---
 
 ## Author
